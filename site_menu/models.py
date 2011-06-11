@@ -12,8 +12,6 @@ from django.utils.translation import ugettext_lazy as _
 
 from model_utils.managers import manager_from
 
-from .settings import *
-
 
 class Menu(Model):
     slug = SlugField(_("slug"), max_length=40, unique=True)

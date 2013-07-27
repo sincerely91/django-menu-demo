@@ -2,9 +2,12 @@ Minimalistic site menu for Django.
 
 There isn't any tests, use at your own risk. The implementation is pretty simple, though.
 
+Won't work under Django 1.5, tested under Django 1.4.
+
 **Setup:** Install from Git
 (``pip install -e git+http://github.com/strogonoff/django-site-menu/#egg=django-site-menu``,
 you may want to fork it beforehand and use your version just in case).
+Install ``django-ttag``.
 Add ``site_menu`` to ``settings.INSTALLED_APPS``.
 
 Create your menu via admin and add ``{% render_menu "menu_slug" %}`` to your template.
